@@ -3,9 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Banner from './components/banner'
 import Footer from './components/footer'
+import Prop from './components/Prop'
+import Prop2 from './components/Prop2'
+import Prop3 from './components/Prop3'
+import StateLearn from './components/StateLearn'
+import Counter from './components/Counter'
+import Contact from './components/Contact'
+import Writer from './components/Writer'
 // import './App.css'
 
 function App() {
+  let name = 'Hameed'
+  let password = '@1234'
   return(
     <><nav className='nav bg-success'>
       <a href="" className='nav-link text-light'>Home</a>
@@ -18,7 +27,14 @@ function App() {
       </h1>
 
       <Banner />
+      <div className='row mx-0'>
 
+      <Prop />
+      <Prop2 name={name} password={password} />
+      {/* <Prop3 /> */}
+      <Contact />
+      </div>
+      <Writer />
 <h4 className='text-center mt-3 border-bottom'>Content</h4>
       <div className='row justify-content-around mx-0 text-justify'>
           <div className="col-md-4">
@@ -35,6 +51,10 @@ function App() {
       </div>
       <Footer />
       </>
+      // <div>
+      //   <StateLearn/>
+      //   <Counter/>
+      // </div>
   )
 }
 
