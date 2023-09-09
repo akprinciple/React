@@ -10,13 +10,18 @@ import StateLearn from './components/StateLearn'
 import Counter from './components/Counter'
 import Contact from './components/Contact'
 import Writer from './components/Writer'
+import AboutProps from './components/Learn/AboutProps'
+import Navbar from './components/Learn/Navbar'
 // import './App.css'
 
 function App() {
   let name = 'Hameed'
   let password = '@1234'
+
+  let user = 'oslimn'
   return(
-    <><nav className='nav bg-success'>
+    <>
+    {/* <nav className='nav bg-success'>
       <a href="" className='nav-link text-light'>Home</a>
       <a href="" className='nav-link text-light'>Get Started</a>
       <a href="" className='nav-link text-light'>About us</a>
@@ -31,7 +36,7 @@ function App() {
 
       <Prop />
       <Prop2 name={name} password={password} />
-      {/* <Prop3 /> */}
+
       <Contact />
       </div>
       <Writer />
@@ -49,7 +54,10 @@ function App() {
 
           </div>
       </div>
-      <Footer />
+      <Footer /> */}
+      <AboutProps person={user} greeting={'hello world'} />
+
+      <Navbar/>
       </>
       // <div>
       //   <StateLearn/>
